@@ -1,0 +1,90 @@
+<!-- write a javascript program to check a number is armstrong or not -->
+<!doctype html>
+<html>
+
+<head>
+    <title>reverse of a number</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color:lightcoral;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h1>reverse of a number</h1>
+       <label>Enter a number:</label> 
+        <br>
+        <input id="nos">
+        <br><br>
+        <button onclick="reverse()" class="btn">click here</button>
+
+        <p id="res"></p>
+
+        <script>
+
+            function reverse() {
+                var rem=0;
+                var rev=0;
+                var r;
+                var n = document.getElementById("nos").value;
+            
+                while (n >0) {
+                   
+                    rem = n % 10;
+                   
+                    rev =rev *10 + rem; 
+                 
+                    n= parseInt(n/10);
+            }
+           n=rev;
+           while(n>0)
+           {
+                r=n%10;
+                switch (r)
+                {
+                    case 1:document.getElementById("res").innerHTML+=(" One");
+                    break;
+                    case 2:document.getElementById("res").innerHTML+=(" Two");
+                    break;
+                    case 3:document.getElementById("res").innerHTML+=(" Three");
+                    break;
+                    case 4:document.getElementById("res").innerHTML+=(" Four");
+                    break;
+                    case 5:document.getElementById("res").innerHTML+=(" Five");
+                    break;
+                    case 6:document.getElementById("res").innerHTML+=(" Six");
+                    break;
+                    case 7:document.getElementById("res").innerHTML+=(" Seven");
+                    break;
+                    case 8:document.getElementById("res").innerHTML+=(" Eight");
+                    break;
+                    case 9:document.getElementById("res").innerHTML+=(" Nine");
+                    break;
+                    case 0:document.getElementById("res").innerHTML+=(" Zero");
+                    break;
+                  
+                }
+                n=parseInt(n/10);
+           }
+        
+            }    
+        </script>
+    </div>
+</body>
+
+</html>

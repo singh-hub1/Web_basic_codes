@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 2000px;
+            width: 550px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: lightcoral;
+            border-radius: 10px;
+
+        }
+
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+        .btn {
+            padding: 5px;
+            border: orchid;
+            border: 2px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 97px;
+        
+        }
+
+        .btn:hover {
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Even and Odd numbers between 50 to 100.</h1>
+        <script>
+            for(i=50;i<=100;i++)
+            {
+              if(i%2==0)
+              {
+                  document.write("Even: "+i);
+                  document.write(" <br><br>");
+              }
+              else
+             { 
+                 document.write("Odd: "+i);
+                 document.write(" <br><br>");
+             }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!-- write a javascript program to check a number is armstrong or not -->
+<!doctype html>
+<html>
+
+<head>
+    <title>reverse of a number</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color:lightcoral;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h1>Sum of a first and last dingit of a number.</h1>
+       <label>Enter a number:</label> 
+        <br>
+        <input id="nos">
+        <br><br>
+        <button onclick="add()" class="btn">click here</button>
+
+        <p id="res"></p>
+
+        <script>
+
+            function add() {
+                var n = document.getElementById("nos").value;
+                var ld=n%10;
+                var fd=n;
+               
+            
+                while (n >= 10) {
+                   
+                    n= parseInt(n/10);
+            }
+            fd=n;
+            var sum=fd+ld;
+            document.getElementById("res").innerHTML=("Sum of " +nos.value +" := "+ sum);
+        
+            }    
+        </script>
+    </div>
+</body>
+
+</html>

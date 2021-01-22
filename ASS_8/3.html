@@ -1,0 +1,72 @@
+<!-- write a javascript program to check a number is armstrong or not -->
+<!doctype html>
+<html>
+
+<head>
+    <title>armstrong of a number</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color:lightcoral;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h1>Check whether any number is armstrong or not</h1>
+        Enter a number:
+        <br>
+        <input id="nos">
+        <br><br>
+        <button onclick="armstrong()" class="btn">armstrong</button>
+
+        <p id="res"></p>
+
+        <script>
+
+            function armstrong() {
+                var rem = 0;
+                var sum=0; //
+                var number = document.getElementById("nos").value;
+                var temp = number;
+                while (temp > 0) {
+                    // console.log(temp);
+                    rem = temp % 10;
+                    //console.log(rem);
+                    //console.log(rem**3);
+                    sum += rem ** 3; //math.floor(rem,3)
+                    //console.log(sum);
+                    temp = parseInt(temp / 10);
+                    //console.log(temp);
+
+                }
+            
+                if (sum == number) {
+                    //console.log(`${number} is an armstrong number`);
+                    document.getElementById("res").innerHTML = (nos.value + " is armstrong number");
+                }
+                else {
+                    //console.log(`${number} is not armstrong number`);
+                    document.getElementById("res").innerHTML = (nos.value + " is not armstrong number");
+                }
+
+
+            }    
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!-- write a javascript program to check a number is armstrong or not -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Fibonacci of a number</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color:lightcoral;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h1>Fibonacci of a number.</h1>
+       <label>Enter a number:</label> 
+        <br>
+        <input id="nos">
+        <br><br>
+        <button onclick="fib()" class="btn">click here</button>
+
+        <p id="res"></p>
+
+        <script>
+
+            function fib() {
+                var n = document.getElementById("nos").value;
+                 var a=0;
+                 var b=1;   
+                 document.getElementById("res").innerHTML+=("Fibonacci series are:");
+                 document.getElementById("res").innerHTML+=(a);
+                 document.getElementById("res").innerHTML+=(",");
+                 document.getElementById("res").innerHTML+=(b);
+                 document.getElementById("res").innerHTML+=(",");
+            //document.write(a);
+            //document.write(b);
+
+                 var c=0;
+            for(var i=2;i<n;i++)
+            {
+               c=a+b;
+              
+               document.getElementById("res").innerHTML+=(c);
+               document.getElementById("res").innerHTML+=(",");
+               // document.write(c)
+                a=b;
+                b=c;
+
+            }
+    
+            }    
+        </script>
+    </div>
+</body>
+
+</html>

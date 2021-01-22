@@ -1,0 +1,63 @@
+<!-- write a javascript program to check a number is perfect or not -->
+<!doctype html>
+<html>
+
+<head>
+    <title>perfect of a number</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: chartreuse;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h1>Check whether any number is perfect or not</h1>
+        Enter a number:
+        <br>
+        <input id="nos">
+        <br><br>
+        <button onclick="perfect()" class="btn">check</button>
+
+        <p id="res"></p>
+
+        <script>
+            
+            function perfect() {
+                var i, f, n = 0;
+                var sum=0;
+                n = document.getElementById("nos").value;
+
+                for (i = 1; i <= n/2; i++) {
+                    if(n%i==0)
+                    sum+=i;
+                }
+
+                if(n==sum)
+                document.getElementById("res").innerHTML=(nos.value+" is perfect number");
+                else
+                document.getElementById("res").innerHTML=(nos.value+" is not perfect number");
+
+                
+            }    
+        </script>
+    </div>
+</body>
+
+</html>

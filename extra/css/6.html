@@ -1,0 +1,58 @@
+    <!-- box model -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        
+        *               /* this is universal selectorin css */
+        {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        .container
+        {
+            background-color: yellowgreen;
+            padding:30px;
+            border-radius: 30px;
+            border: 4px solid rgb(122, 78, 121);
+            margin:21px;
+            /* you can apply one side also like as left,right,top,buttom :margin as well as padding*/
+            width:250px;
+            /* suppose we don't use box-sizzing property then when we increase padding size it automatically cover all the width  */
+            /* but when we use box-sizzing property then padding is increase inside that box */
+            box-sizing: border-box;
+        }
+    </style>
+    <body>
+         <div class="container">
+             <h3>this is heading</h3>
+             <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 Sed voluptate perferendis eos vero nisi! Laborum dicta placeat ratione 
+                 numquam commodi accusantium velit laboriosam vero error, inventore 
+                 fugiat eum dolorum nostrum.
+            </p>
+          </div>
+
+          <div class="container">
+            <h3>this is heading</h3>
+            <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sed voluptate perferendis eos vero nisi! Laborum dicta placeat ratione 
+                numquam commodi accusantium velit laboriosam vero error, inventore 
+                fugiat eum dolorum nostrum.
+           </p>
+         </div>
+
+         <div class="container">
+            <h3>this is heading</h3>
+            <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sed voluptate perferendis eos vero nisi! Laborum dicta placeat ratione 
+                numquam commodi accusantium velit laboriosam vero error, inventore 
+                fugiat eum dolorum nostrum.
+           </p>
+         </div>
+
+    </body>
+</html>

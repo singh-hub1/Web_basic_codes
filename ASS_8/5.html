@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 1000px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: lightcoral;
+            border-radius: 10px;
+
+        }
+
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+        .btn {
+            padding: 5px;
+            border: orchid;
+            border: 2px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 97px;
+        
+        }
+
+        .btn:hover {
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Prime numbers between 1 to 89.</h1>
+        <script>
+            for(i=1;i<=89;i++)
+            {
+                flag=1;
+                for(j=2;j<=i/2;j++)
+                {
+                    if(i%j==0)
+                    {
+                        flag=0;
+                        break;
+                    }
+                }
+                if(flag)
+                { 
+                    document.write("Prime number is:"+i);
+                    document.write(" <br><br>");
+            }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

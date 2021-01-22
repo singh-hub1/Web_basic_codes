@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            color: brown;
+            background-color: palegreen;
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            border-radius: 9px;
+            text-align: center;
+            margin-top: 200px;
+            box-shadow: 2px 3px 3px 5px;
+        }
+
+        body {
+            background-color: salmon;
+        }
+        #coco
+        {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+<p id="coco"></p>
+        <script>
+            var arr = [];
+            var i;
+            var num = prompt("Enter how many numbers you want");
+            var n = parseInt(num);
+
+            for (i = 0; i < n; i++) {
+                var num = prompt("enter the value in an array");
+                arr[i] = parseInt(num);
+            }
+
+            var num = parseInt(prompt("1.Display" + " " + "2.Sort" + " " + "3.Reverse" + " " + "4.Search"));
+            switch (num) {
+                case 1: display(); break;
+
+                case 2: sorting(); break;
+
+                case 3: rev(); break;
+
+                case 4:searching(); break;
+
+            }
+
+            function display()
+            {
+                document.getElementById("coco").innerHTML+=("<h1>"+"Content of an Array be:"+"</h1>");
+                for(i=0;i<n;i++)
+                {
+                    document.getElementById("coco").innerHTML+=("<strong>"+arr[i]+"<br> "+"</strong>");
+                }
+            }
+
+            function sorting()
+            {
+                document.getElementById("coco").innerHTML+=("<h1>"+"Sorted Array be:"+"</h1>");
+                arr.sort();
+                for(i=0;i<n;i++)
+                {
+                    document.getElementById("coco").innerHTML+=("<strong>"+arr[i]+"<br> "+"</strong>");
+                }
+            }
+
+            function rev()
+            {
+                document.getElementById("coco").innerHTML+=("<h1>"+"Reverse Array be:"+"</h1>");
+                arr.reverse();
+                for(i=0;i<n;i++)
+                {
+                    document.getElementById("coco").innerHTML+=("<strong>"+arr[i]+"<br> "+"</strong>");
+                }
+            }
+
+
+            function searching()
+            {
+                var b=parseInt(prompt("Enter the number to be search"));
+                var c=arr.indexOf(b);
+                
+             document.getElementById("coco").innerHTML+=("<strong>"+"Number "+b +" is found at:"+c+"<br> "+"</strong>");
+                
+            }
+
+
+        </script>
+    </div>
+</body>
+
+</html>

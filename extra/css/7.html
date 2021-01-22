@@ -1,0 +1,94 @@
+<!-- float & clear property in css -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>float and clear property</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            border-radius: 22px;
+            border: 4px solid red;
+            padding: 11px;
+            margin: auto;
+            width: 900px;
+            background-color: saddlebrown;
+
+        }
+
+        .items {
+            border: 2px solid grey;
+            margin: 10;
+            padding: 11px;
+            background-color: royalblue;
+            border-radius: 22px;
+        }
+
+        #fruits {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            width: 48%;
+        }
+
+        h1 {
+            margin: auto;
+            width: 455px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>welcome to float and css property</h1>
+
+        <div id="fruits" class="items">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+                necessitatibus maxime dolorem doloribus, dolore quae odit dolor maiores doloremque incidunt nulla
+                adipisci neque sed dolores est? Dolorem consectetur facilis dignissimos.</p>
+        </div>
+
+
+
+        <div id="computer" class="items">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda unde
+                cum inventore eum, repudiandae eius sunt eos adipisci itaque delectus dolore vero amet ipsum.
+                Consectetur repudiandae obcaecati nobis saepe dignissimos?</p>
+        </div>
+
+
+
+        <div id="stationary" class="items">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                laudantium sed dicta ut suscipit, modi quos ducimus culpa soluta, accusamus eius, accusantium velit
+                beatae corporis quis! Fugit impedit quidem culpa.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

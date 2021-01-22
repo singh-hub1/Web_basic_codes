@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <title>
+        PAY NOW FORM
+    </title>
+</head>
+<style>
+    .box1
+     {
+        position: relative;
+        border: 3px solid black;
+        font-family: calibri;
+        height: 500px;
+        width: 370px;
+        margin: 50px auto 50px auto;
+        padding: 10px;
+        box-shadow: 4px 4px 15px 9px;
+        background-color: yellowgreen;
+        margin-top: 100px;
+        
+    }
+
+    .box2 
+    {
+        position: absolute;
+        background-color: rgb(163, 157, 157);
+        border: 2px solid burlywood;
+        height: 150px;
+        width: 340px;
+        top: 40%;
+        left: 3%;
+        margin: 50px auto 50px auto;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .mastercard
+     {
+        position: absolute;
+        left: 50%;
+        top: 16%;
+    }
+
+    .visa
+     {
+        position: absolute;
+        left: 63%;
+        top: 17%;
+    }
+
+    .amex 
+    {
+        position: absolute;
+        left: 75%;
+        top: 14%;
+    }
+
+    .paypal 
+    {
+        position: absolute;
+        left: 25%;
+        top: 25%;
+    }
+
+    .button 
+    {
+        position: absolute;
+        bottom: 11%;
+        left: 33%;
+    }
+    .NOC
+    {
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+    .CN
+    {
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+    .month
+    {
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+    .code
+    {
+        padding: 3px;
+    }
+    .differ
+    {
+        margin: 10px;
+    }
+</style>
+
+<body style="background-color: tomato;">
+    <div class="box1">
+        <h2>Pay Now</h2>
+        <form action="mailto:vishalkvd2005@gmail.com" method="POST">
+
+            <table border="0">
+                <!-- <caption align="left"></caption> -->
+                <tr>
+                    <font size="4%">
+                        <input class="differ" type="radio" name="Pay now" checked>Credit or Debit Card<br>
+                        <input  class="differ" type="radio" name="Pay now">Pay with Net Banking<br>
+                        <input  class="differ" type="radio" name="Pay now">PayPal<br>
+                        <input  class="differ" type="radio" name="Pay now">Pay by Mobile Using Local Methods<br>
+               </tr>
+            </table>
+
+            <div class="mastercard">
+                <img src="mastercard.png" width="45px" height="30px">
+            </div>
+            <div class="visa">
+                <img src="visa.png" width="40px" height="30px">
+            </div>
+            <div class="amex">
+                <img src="amex.png" width="40px" height="40px">
+            </div>
+            <div class="paypal">
+                <img src="paypal-5-226456.webp" width="60px" height="60px">
+            </div>
+
+            <div class="box2">
+                <table >
+                    <tr>
+                        <td>
+                            <input class="NOC" size="37%" type="text" name="name" placeholder="Name on Card">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="CN" size="37%" type="password" name="pwd" placeholder="Card Number">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div>
+                                <select class="month_year">
+                                    <option>MM</option>
+                                    <option>Jan</option>
+                                    <option>Feb</option>
+                                    <option>Mar</option>
+                                    <option>Apr</option>
+                                    <option>May</option>
+                                    <option>Jun</option>
+                                    <option>Jul</option>
+                                    <option>Aug</option>
+                                    <option>Sept</option>
+                                    <option>Oct</option>
+                                    <option>Nov</option>
+                                    <option>Dec</option>
+                                </select>
+
+                                <select class="month_year">
+                                    <option>YYYY</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                </select>
+
+                                <input class="code" size="10%" type="password" name="password" placeholder="Security Code">
+                            </div>
+                            <h6>Be completing your purchase you agree to these <font color="green">Terms of Service. </h6>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="button">
+                      <input type="submit" value="Complete Payment"> 
+            </div>
+</body>
+
+</html>

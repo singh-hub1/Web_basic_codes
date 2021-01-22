@@ -1,0 +1,67 @@
+<!-- write a javascript program to print factorial of a number -->
+<!doctype html>
+<html>
+
+<head>
+    <title>factorial of a number</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: chartreuse;
+            border-radius: 10px;
+        }
+
+        .btn {
+            padding: 5px;
+            border: orchid;
+            border: 2px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h1>factorial of any number</h1>
+        Enter a number:
+        <br>
+        <input id="nos">
+        <br><br>
+        <button onclick="fact()" class="btn">factorial</button>
+
+        <p id="res"></p>
+
+        <script>
+            
+            function fact() {
+                var i, f, n = 0;
+                f = 1;
+                n = document.getElementById("nos").value;
+
+                for (i = 1; i <= n; i++) {
+                    f = f * i;
+                }
+
+                document.getElementById("res").innerHTML = "The factorial of the number " + nos.value + " is: " + f;
+            }    
+        </script>
+    </div>
+</body>
+
+</html>

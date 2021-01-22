@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn { color: red;
+            margin-top: 80px;
+            border-radius: 3px;
+            box-shadow: 2px 4px 5px;}
+
+        .box {
+            color: brown;
+            background-color:palegreen;
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            border-radius: 9px;
+            text-align: center;
+            margin-top: 200px;
+            box-shadow: 2px 3px 3px 5px;
+        }
+        #label
+        {
+            margin-top: 200px;
+        }
+        body
+        {
+            background-color: salmon;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <label id="label">Enter any number:</label>
+        <input id="nos" placeholder="number">
+        <button onclick="fact()" id="btn">click me</button>
+        <p id="coco"></p>
+
+        <script>
+            function fact() {
+                var a = parseInt(document.getElementById("nos").value);
+                var j = 0;
+                var arr = [];
+                for (var i = 1; i <= a; i++) {
+                    if (a % i == 0) {
+                        arr[j] = i;
+                        j++;
+                    }
+                }
+                document.getElementById("coco").innerHTML+=("Factorial of "+a+":"+"<br>");
+
+                for (var k = 0; k < j; k++) {
+                   document.getElementById("coco").innerHTML+=  ([arr[k]+" "]  );
+                }
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

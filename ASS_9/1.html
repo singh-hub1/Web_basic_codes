@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            color: brown;
+            background-color: chartreuse;
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            border-radius: 9px;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        .btn {
+            color: red;
+            margin-top: 80px;
+            border-radius: 3px;
+            box-shadow: 2px 4px 5px;
+        }
+    </style>
+</head>
+
+<body style="background-color: aqua;">
+    <div class="box">
+        <button onclick="greet()" class="btn">Click me</button>
+        <p id="coco"></p>
+        <script>
+            function greet() {
+                var day = new Date();
+                var hr = day.getHours();
+                var x;
+                if (hr >= 6 && hr < 12) {
+                    x = ("<h1>" + "Good Morning" + "</h1>");
+                }
+                else if (hr == 12) {
+                    x = ("<h1>" + "Good Noon" + "</h1>");
+                }
+                else if (hr >= 13 && hr <= 16) {
+                    x = ("<h1>" + "Good Afternoon" + "</h1>");
+                }
+                else if (hr >= 17 && hr <= 20) {
+                    x = ("<h1>" + "Good Evening" + "</h1>");
+                }
+                else if (hr > 20 && hr <= 24) {
+                    x = ("<h1>" + "Good Night" + "</h1>");
+                }
+                else {
+                    x = ("<h1>" + "HAVE A NICE DAY" + "</h1>");
+                }
+                document.getElementById("coco").innerHTML = x;
+            }
+
+
+        </script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: lightcoral;
+            border-radius: 10px;
+
+        }
+
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 5px;
+            border: orchid;
+            border: 2px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 97px;
+
+        }
+
+        .btn:hover {
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <center>
+            <h1>password checking</h1>
+        </center>
+        <label>Enter password:</label>
+        <input type="password" id="pass" placeholder="Your password">
+        <br><br>
+        <p id="para"></p>
+        <button onclick="pwd()" class="btn">check</button>
+        <script>
+            function pwd() {
+                var pwds = "admin";
+                var i=1 ;
+               
+                while(i<=3)
+                {
+                    var n = document.getElementById("pass").value;
+
+                    if (pwds== n) {
+                        alert("Password correct");
+                        break;
+                    }
+                    else if(i==1)
+                    {
+                        alert("two left");
+                        i++;
+                        break;
+                    }
+                    else if(i==2)
+                    {
+                        alert("one left");
+                        i++;
+                        break;
+                    }
+                    else
+                    {
+                        alert("next time");
+                    }
+                    
+                }
+            }
+                
+        </script>
+    </div>
+</body>
+
+</html>
