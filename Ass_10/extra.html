@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email validation</title>
+</head>
+
+<body>
+
+    <form action="welcome.html" method="GET">
+        <div>
+            <label>Your Email:</label>
+            <br>
+            <input id="in" type="text" placeholder="Your Email"  autocomplete="off">
+            <p id="para"></p>
+            <button onclick="validte()" id="btn">click me</button>
+    
+    <script>
+        function validate() {
+            var text = document.getElementById("in").value;
+
+            var regx = /^[A-za-z0-9]+[@]{1}[A-za-z]+[.]{1}[A-Za-z]{3}/$;
+            {
+                if (regx.test(text)) {
+
+                    document.getElementById("para").innerHTML = "valid";
+                    document.getElementById("para").style.visibility = "visible";
+                    document.getElementById("para").style.color = "green";
+
+                }
+                else {
+
+                    document.getElementById("para").innerHTML = "invalid";
+                    document.getElementById("para").style.visibility = "visible";
+                    document.getElementById("para").style.color = "red";
+
+                }
+            }
+        }
+    </script>
+</form>
+</body>
+</div>
+
+</html>

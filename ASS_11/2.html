@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!--this is from google fonts -->
+</head>
+<style>
+    .box {
+        border-style: dotted;
+        height: 500px;
+        width: 500px;
+        margin: auto;
+        margin-top: 100px;
+        padding: 50px;
+        font-family: Ubuntu, sans-serif;
+        border-color: black;
+        font-weight: 40;
+        background-color: cadetblue;
+        border-radius: 10px;
+    }
+    body
+    {
+        background-color: darkgoldenrod;
+    }
+
+
+
+    .btn {
+        border-radius: 7px;
+        padding: 5px;
+        background-color: grey;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .fname {
+        border: 3px solid black;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .spa {
+        margin-left: 150px;
+        color: red;
+    }
+
+
+    .star {
+        position: relative;
+        margin-left: 300px;
+        float: left;
+
+    }
+</style>
+
+<body>
+    <div class="box">
+
+        <h1 class="head">Subscribe to our mailing list</h1>
+        <br><br>
+
+        <form action="">
+            <label><b>Email Address</b></label>
+            <span class="spa"><small>* indicates required</small></span>
+            <br>
+            <div> <input type="text" class="fname" placeholder="Email" size="50" required>
+            </div>
+
+            <br><br>
+            <label><b>First Name</b></label>
+
+            <br>
+            <div><input type="text" class="fname" placeholder="Email" size="50" required></div>
+
+            <br><br>
+            <label><b>Last Name</b> </label>
+            <br>
+            <input type="text" class="fname" placeholder="Email" size="50" required>
+            <br><br>
+            <br>
+            <input type="button" size="12" value="Subscribe" class="btn">
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    .box {
+        border: 5px solid orchid;
+        text-align: center;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+        margin-top: 100px;
+        background-color:tomato;
+        border-radius: 10px;
+
+    }
+
+  
+</style>
+
+
+
+<body>
+    <div class="box">
+
+        <label for="color">Select Background color: </label><br>
+        <select id="bg-color" onchange="change()">
+            <option value="white">White</option>
+            <option value="black">BLACK</option>
+            <option value="red">RED</option>
+            <option value="orange">ORANGE</option>
+            <option value="grey">GREY</option>
+            <option value="yellow">YELLOW</option>
+            <option value="violet">VIOLET</option>
+        </select>
+    </div>
+    <script>
+        function change() {
+            var a = document.getElementById("bg-color").value;
+            document.body.style.background = a;
+        }
+    </script>
+</body>
+
+</html>

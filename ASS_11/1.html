@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        border: 10px solid;
+        text-align: center;
+        height: 500px;
+        width: 700px;
+        margin: auto;
+        margin-top: 100px;
+        background-color: lightcoral;
+        border-radius: 10px;
+        box-shadow: 2px 4px 18px 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: saddlebrown;
+    }
+
+    .hr {
+        border: 1px solid black;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .btn {
+        margin-left: 300px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 3px solid black;
+        color: whitesmoke;
+        background-color: crimson;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: darkgoldenrod;
+    }
+
+    .fname {
+        border: 3px solid black;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .tarea {
+        border: 3px solid black;
+        margin: auto;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <h1>SEND FEEDBACK</h1>
+        <hr class="hr">
+        <form action="welcome.html"><br>
+
+            <input type="text" class="fname" size="50" placeholder="Email" autocomplete="off"><br><br>
+            <textarea class="tarea" cols="46" rows="5" placeholder="Message" autocomplete="off"></textarea>
+            <br><br>
+            <input type="submit" value="Send" class="btn">
+
+        </form>
+
+    </div>
+</body>
+
+</html>

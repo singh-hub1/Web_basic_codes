@@ -1,0 +1,286 @@
+
+    div {
+
+
+        /* outline: 2px solid red;  */
+        height: 250px;
+        float: left;
+
+
+    }
+
+    .container1 {
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+    .tone {
+        width: 500px;
+        float: left;
+    }
+
+    .box1 {
+        width: 60%;
+        margin-left: 500px;
+        margin-top: 50px;
+        position: absolute;
+    }
+
+    .box2 {
+
+        width: 60%;
+        margin-left: 500px;
+        margin-top: 370px;
+        position: absolute;
+    }
+
+    .container2 {
+        width: 200px;
+        height: 200px;
+        float: right;
+    }
+
+    .ttwo {
+        width: 500px;
+        float: right;
+    }
+
+
+
+
+
+    .box3 {
+
+        width: 60%;
+        margin-left: 500px;
+        margin-top: 700px;
+        position: absolute;
+    }
+
+    .container3 {
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+    .tthree {
+        width: 500px;
+        float: left;
+    }
+
+
+
+
+
+    .box4 {
+
+        width: 60%;
+        margin-left: 500px;
+        margin-top: 1000px;
+        position: absolute;
+    }
+
+    .container4 {
+        width: 200px;
+        height: 200px;
+        float: right;
+    }
+
+    .tfour {
+        width: 500px;
+        float: right;
+    }
+
+
+
+
+
+
+
+    .box5 {
+
+        width: 60%;
+        margin-left: 500px;
+        margin-top: 1300px;
+        position: absolute;
+    }
+
+    .container5 {
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+    .tfive {
+        width: 500px;
+        float: left;
+    }
+
+
+
+    .box6 {
+
+        width: 60%;
+        margin-left: 500px;
+        margin-top: 1600px;
+        position: absolute;
+    }
+
+    .container6 {
+        width: 200px;
+        height: 200px;
+        float: right;
+    }
+
+    .tsix {
+        width: 500px;
+        float: right;
+    }
+
+
+
+
+
+    body {
+
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .selection {
+        height: 500px;
+        width: 400px;
+        padding: 40px;
+
+    }
+
+    .btn {
+        background-color: #eeeeee;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #fcbad3;
+    }
+
+    .spa1 {
+        position: absolute;
+        margin-left: 100px;
+        padding: 10px;
+        width: 150px;
+        margin-left: 800px;
+    }
+
+    .rev1 {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: greenyellow;
+        margin-left: 890px;
+        margin-top: 12px;
+    }
+
+
+    .spa2 {
+        position: absolute;
+        margin-left: 40px;
+        padding: 10px;
+        width: 150px;
+    }
+
+    .rev2 {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: indianred;
+        margin-right: 400px;
+        margin-top: 12px;
+
+    }
+
+    .spa3 {
+        position: absolute;
+        margin-left: 100px;
+        padding: 10px;
+        width: 150px;
+        margin-left: 800px;
+    }
+
+    .rev3 {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: orange;
+        margin-left: 890px;
+        margin-top: 12px;
+    }
+
+
+
+
+    .spa4 {
+        position: absolute;
+        margin-left: 40px;
+        padding: 10px;
+        width: 150px;
+    }
+
+    .rev4 {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: tomato;
+        margin-right: 400px;
+        margin-top: 12px;
+
+    }
+
+
+    .spa5 {
+        position: absolute;
+        margin-left: 100px;
+        padding: 10px;
+        width: 150px;
+        margin-left: 800px;
+    }
+
+    .rev5 {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: springgreen;
+        margin-left: 890px;
+        margin-top: 12px;
+    }
+
+    .spa6 {
+        position: absolute;
+        margin-left: 40px;
+        padding: 10px;
+        width: 150px;
+    }
+
+    .rev6 {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: palevioletred;
+        margin-right: 400px;
+        margin-top: 12px;
+
+    }

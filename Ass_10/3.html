@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box
+    {
+        border: 10px solid orchid;
+            text-align: center;
+            height: 500px;
+            width: 700px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: lightcoral;
+            border-radius: 10px;
+
+    }
+    body {
+            background-color: aqua;
+            text-align: center;
+        }
+   
+</style>
+
+
+
+<body>
+    <form action="welcome.html">
+        <div class="box"> 
+            <h1>PAN DETAILS</h1>
+            <label for="pan_number" >Enter your Pan number : </label>
+            <input type="text" id="pan" placeholder="pan number"><br><br>
+            <span id="card" ></span>
+            <br><br>
+            <input type="button" value="Submit" onclick="Validate()" />
+        </div>
+
+    </form>
+
+
+    <script>
+        function Validate() {
+            var a = document.getElementById("pan").value;
+            var b = document.getElementById("pan");
+
+            var regex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+            if (regex.test(a)) {
+                document.getElementById("card").innerHTML = "Valid PAN NUMBER";
+
+
+            } else {
+
+                document.getElementById("card").innerHTML = "**Invalid PAN NUMBER";
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

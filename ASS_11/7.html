@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    div {
+        /* outline: 2px solid red;  */
+    }
+
+    .container {
+        position: relative;
+        height: 1650px;
+        width: 60%;
+        margin: auto;
+        border: 5px solid black;
+        background-color: lightsteelblue;
+        border-radius: 12px;
+    }
+
+    .box1 {
+        position: absolute;
+        height: 392px;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 200px;
+
+
+    }
+
+    .box2 {
+        position: absolute;
+        height: 574px;
+        width: 50%;
+        margin: auto;
+        margin-top: 410px;
+        margin-left: 200px;
+
+    }
+
+    .box3 {
+        position: absolute;
+        height: 480px;
+        width: 50%;
+        margin: auto;
+        margin-top: 960px;
+        margin-left: 200px;
+
+    }
+
+    .input {
+        padding: 5px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #3CBC8D;
+        color: white;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .input:focus {
+        background-color: lightblue;
+        border: 3px solid #555;
+    }
+
+    .field3,
+    .field2,
+    .field1 {
+        border: 3px solid black;
+        padding: 50px;
+    }
+
+    body {
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        background-color: #e3d0b9;
+    }
+
+    .head {
+        margin-left: 250px;
+    }
+    .btn
+    {
+        padding: 8px;
+        margin-top: 1400px;
+        margin-left: 730px;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color:powderblue;
+        text-emphasis: weight;
+        text-shadow: orangered;
+        border: 2px solid black;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="head"><u>Personal Details</u></h1>
+        <form action="/action_page.php">
+            <div class="box1">
+                <fieldset class="field1">
+                    <legend>Personal Information</legend>
+                    <label>First name:</label><br>
+                    <input type="text" size="40" class="input"><br><br>
+                    <label>Last name:</label><br>
+                    <input type="text" size="40" class="input"><br><br>
+
+                    <label>Date of Birth:</label><br>
+                    <input type="date" name="birthday" class="input"><br><br>
+                    <label>Gender:</label><br>
+                    <select>
+                        <option>Choose a gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+
+                </fieldset>
+            </div>
+
+            <br><br>
+
+            <div class="box2">
+                <fieldset class="field2">
+                    <legend>Account Information</legend>
+                    <label>Email:</label><br>
+                    <input type="email" size="40" class="input"><br><br>
+                    <label for="">Re-type Email</label><br>
+                    <input type="email" name="" id="" size="40" class="input"><br><br>
+                    <label for="">Password</label><br>
+                    <input type="password" name="" id="" size="40" class="input"><br>
+                    <span>(Min 8 characters,1number,case sensitive)</span><br>
+                    <br>
+                    <label for="">Re-type password</label><br>
+                    <input type="password" name="" id="" size="40" class="input"><br><br>
+                    <label for="">Security Question</label><br>
+                    <select name="" id="">
+                        <option value="">Choose a security question</option>
+                        <option value="">Your first pet's name?</option>
+                        <option value="">Your first teacher?</option>
+                        <option value="">Your first house number?</option>
+                    </select>
+                    <br><br>
+                    <label for="">Security Answer</label><br>
+                    <input type="text" name="" id="" size="40" class="input"><br>
+                    <span>(Not case-sensitive)</span><br>
+                </fieldset>
+            </div>
+
+            <br><br>
+            <div class="box3">
+                <fieldset class="field3">
+                    <legend>Contact Information</legend>
+                    <label for="fname">Address:</label><br>
+                    <input type="text" id="fname" name="fname" size="40" class="input"><br><br>
+                    <label for="lname">City:</label><br>
+                    <input type="text" id="lname" name="lname" size="40" class="input"><br><br>
+                    <label for="email">State:</label><br>
+                    <select name="" id="">
+                        <option value="">Choose a State</option>
+                        <option value="">Bihar</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Goa</option>
+                        <option value="">Tamil Nadu</option>
+                        <option value="">Haryana</option>
+                    </select>
+                    <br><br>
+                    <label for="">Zip Code</label><br>
+                    <input type="text" name="" id="" size="10" class="input">
+                    <span>(Optional)</span>
+                    <br><br>
+                    <label for="">Phone</label><br>
+                    <input type="text" name="" id="" size="20" class="input">
+
+                    <select name="" id="">
+                        <option value="">Mobile</option>
+                        <option value="">Lnadline</option>
+                        <option value="">Telephone</option>
+                        <option value="">R-sim</option>
+
+                    </select>
+                    <br>
+                    <span>(No dashes or spaces)</span>
+
+
+                </fieldset>
+            </div>
+
+        </form>
+        <div>
+            <button class="btn"><b>Submit</b></button>
+        </div>
+    </div>
+</body>
+
+</html>
