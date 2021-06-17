@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vishal assignment _09</title>
+</head>
+<body>
+<script>
+'use strict'
+var number;
+function math(){
+document.getElementById("output").innerHTML="<label>Enter a number : </label><input id=number>";
+}
+document.addEventListener("keyup",function(event){
+number= parseInt(document.getElementById("number").value);
+if(event.key=='Enter'){
+if(2==parseInt(document.getElementById("input").value))
+document.getElementById("output").innerHTML="<label>Enter a Power : </label><input id=pow> <button onclick=solution()>Get POWER</button>"; 
+else
+solution();
+} 
+});
+function solution(){
+var ch=parseInt(document.getElementById("input").value);
+switch (ch) {
+case 1: document.getElementById("output").innerHTML="Square Root of given number : "+Math.sqrt(number);
+break;
+case 2: var power = parseInt(document.getElementById("pow").value);
+document.getElementById("output").innerHTML=Math.pow(number,power);
+break;
+case 3: document.getElementById("output").innerHTML="Absolute Value of Given Number : "+Math.abs(number); 
+break;
+default: document.write("Invalid Choice....");
+break;
+}}
+</script>
+<p>1. Square-Root <br>2. Power <br>3. Absolute Value<br></p>
+<label>Enter your choice. </label>
+<input type="text" id="input">
+<button onclick="math()">Sumbit</button>
+<p id="output"></p>
+</body>
+</html>

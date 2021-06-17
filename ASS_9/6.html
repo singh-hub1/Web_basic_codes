@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vishal Assignment 09</title>
+<script>
+'use strict'
+class Stack{
+constructor(){
+this.data=[];
+this.top=-1; 
+}
+}
+class Queue{
+constructor(){
+this.data = [];
+this.front=0;
+this.rear=0;
+}
+}
+let stack = new Stack();
+let queue = new Queue();
+function push(n) {
+stack.data[++stack.top] = n;
+}
+function pop() {
+return stack.data[stack.top--];
+}
+function printStack() {
+var top = stack.top;
+var output="";
+while (top>=0) {
+output = output+" "+stack.data[top]+" ";
+top--;
+}
+document.getElementById("output").innerHTML = "Elements in a STACK : "+output;
+}
+
+function insert(element) {
+queue.data[queue.rear++] = element;
+}
+function deleteq() {
+return queue.data[queue.front++];
+}
+
+function printQueue() {
+var output=""
+for(var i=queue.front; i<queue.rear; i++){
+output = output + " "+queue.data[i];
+}
+document.getElementById("output").innerHTML ="Elements in a QUEUE : "+output;
+}
+
+function oprations() {
+var ch = parseInt(document.getElementById("input").value); 
+document.getElementById("output").innerHTML=" ";
+switch (ch) {
+case 1: var num = parseInt(prompt("Enter a element : "));
+push(num);
+break;
+case 3: if (stack.top == -1) 
+document.getElementById("output").innerHTML = "Stack is UNDERFLOW !!!";
+else 
+printStack();
+break;
+case 2: if (stack.top == -1) 
+document.getElementById("output").innerHTML = "Stack is UNDERFLOW !!!";
+else 
+document.getElementById("output").innerHTML = "Poped Element in a STACK : "+pop();
+break;
+case 4: var num = parseInt(prompt("Enter a element : "));
+insert(num);
+break; 
+case 5: if (queue.front == queue.rear) 
+document.getElementById("output").innerHTML = "QUEUE is Empty !!!";
+else
+document.getElementById("output").innerHTML = "Deleted Element in a QUEUE : "+deleteq();
+break;
+case 6: if (queue.front == queue.rear) 
+document.getElementById("output").innerHTML = "QUEUE is Empty !!!";
+else
+printQueue(); 
+break;
+default: document.getElementById("output").innerHTML = "Invalid Choice...";
+break;
+}
+}
+
+</script>
+</head>
+<body>
+<p> 1. Insert an element in stack <br> 
+2. Delete an element from stack <br> 
+3. Display the contents of stack <br> 
+4. Insert an element in queue <br> 
+5. Delete an element from queue <br>
+6. Display the contents of queue <br>
+</p> 
+<label>Enter your choice : </label> 
+<input type="text" id="input">
+<button onclick="oprations()">Submit</button> 
+<p id="output"></p>
+</body>
+</html>

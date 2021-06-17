@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vishal assignment_09</title>
+</head>
+<body>
+<script>
+function eventDay() {
+var day = document.getElementById("input").value;
+switch (day) {
+case '1 January': document.getElementById("output").innerHTML = "HAPPY NEW YEAR !!!";
+break;
+case '25 December': document.getElementById("output").innerHTML = "MERRY CHRISTMAS !!!";
+break;
+case '14 January': document.getElementById("output").innerHTML = "HAPPY MAKARSANKRANT !!!";
+break;
+default: document.getElementById("output").innerHTML = "Have a nice day !!!"
+break;
+}
+}
+</script>
+</body>
+<label >Enter a Day with Month</label>
+<input type="text" id="input">
+<button onclick="eventDay()">Sumbit</button>
+<p id="output"></p>
+</html>
+
+
